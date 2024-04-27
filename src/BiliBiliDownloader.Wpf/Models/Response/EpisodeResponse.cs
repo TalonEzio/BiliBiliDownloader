@@ -1,5 +1,5 @@
-﻿using System.Text.Json.Serialization;
-using BiliBiliDownloader.Wpf.Common;
+﻿using BiliBiliDownloader.Wpf.Common;
+using System.Text.Json.Serialization;
 
 namespace BiliBiliDownloader.Wpf.Models.Response
 {
@@ -163,7 +163,7 @@ namespace BiliBiliDownloader.Wpf.Models.Response
         public string Url { get; set; } = string.Empty;
 
         [JsonPropertyName("backup_url")]
-        public object BackupUrl { get; set; } = string.Empty;
+        public string? BackupUrl { get; set; } = string.Empty;
 
         [JsonPropertyName("container")]
         public long Container { get; set; }
